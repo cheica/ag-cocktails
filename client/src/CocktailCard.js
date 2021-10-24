@@ -32,16 +32,14 @@ function CocktailCard(props){
      
     <div className="flex-container">
         <div className="center"> 
-        <div className="card">
-            <img className="card-img" src={props.drinksToRender.image} alt={props.drinksToRender.name} />
-        {/* </div> */}
-
-        {/* <div className="name"> */}
+            <div className="card" >
+                 <img className="card-img" src={props.drinksToRender.image} alt={props.drinksToRender.name} />
+        
                 <h4 >{props.drinksToRender.name}</h4>
-            <button onClick={(e) => props.deleteFunc(props.drinksToRender.id)}>Delete</button>
-        </div>
+                <button onClick={(e) => props.deleteFunc(props.drinksToRender.id)}>Delete</button>
+            </div>
 
-    </div>
+        </div>
     </div>
     )
 

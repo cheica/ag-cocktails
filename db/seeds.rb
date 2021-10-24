@@ -8,6 +8,7 @@
 
 User.destroy_all 
 Cocktail.destroy_all
+Rate.destroy_all
 
 puts "I am starting to SEED Users"
 
@@ -20,23 +21,34 @@ puts "I am DONE seeding Users"
 puts "I am starting to SEED Cocktails" 
 
 #####Purple#### 
-Cocktail.create(name: "Blue Whale", image: "https://pbs.twimg.com/media/FCHxYF7WEAAi0Qz?format=jpg&name=medium", user_id: andres.id)
-Cocktail.create(name: "Amethyst Potion", image: "https://pbs.twimg.com/media/FCChaPhXoAEOi-K?format=jpg&name=large", user_id: andres.id)
-Cocktail.create(name: "Purple Rain", image: "https://pbs.twimg.com/media/FCChaPiXMAAATxS?format=jpg&name=large", user_id: andres.id)
-Cocktail.create(name: "Purple Rain", image: "https://pbs.twimg.com/media/FCHpemZXMAUru8V?format=jpg&name=large", user_id: andres.id)
+Cocktail.create(name: "Blue Whale", image: "https://pbs.twimg.com/media/FCQI40OWQAEbBD5?format=jpg&name=medium", user_id: andres.id)
+Cocktail.create(name: "Amethyst Potion", image: "https://pbs.twimg.com/media/FCQI40XXEAIyqkU?format=jpg&name=medium", user_id: andres.id)
+# Cocktail.create(name: "Purple Rain", image: "https://pbs.twimg.com/media/FCChaPiXMAAATxS?format=jpg&name=large", user_id: andres.id)
+Cocktail.create(name: "Purple Rain", image: "https://pbs.twimg.com/media/FCQI40UXIAkOB5U?format=jpg&name=large", user_id: andres.id)
 
 
 #####Green#### 
-Cocktail.create(name: "Frozen Margarita", image: "https://pbs.twimg.com/media/FCCiAyiWEAIN4PA?format=jpg&name=large", user_id: andres.id)
-Cocktail.create(name: "Breath of Fresh Air", image: "https://pbs.twimg.com/media/FCCiAyhXIAIjOPi?format=jpg&name=large", user_id: andres.id)
-Cocktail.create(name: "Esencia de Vainilla", image: "https://pbs.twimg.com/media/FCCiAymXEAABJzN?format=jpg&name=large", user_id: andres.id)
-Cocktail.create(name: "Apple Cider Vodka", image: "https://pbs.twimg.com/media/FCHmc1vXIAEoMgG?format=jpg&name=large", user_id: andres.id)
+Cocktail.create(name: "Frozen Margarita", image: "https://pbs.twimg.com/media/FCQJtlKXoAwiueV?format=jpg&name=large", user_id: andres.id)
+Cocktail.create(name: "Breath of Fresh Air", image: "https://pbs.twimg.com/media/FCQJtlKWEAM8zrv?format=jpg&name=large", user_id: andres.id)
+Cocktail.create(name: "Esencia de Vainilla", image: "https://pbs.twimg.com/media/FCQJtlLWQAsCoLY?format=jpg&name=large", user_id: andres.id)
+# Cocktail.create(name: "Apple Cider Vodka", image: "", user_id: andres.id)
 
 #####Orange#### 
-Cocktail.create(name: "Autumn Colors", image: "https://pbs.twimg.com/media/FCCjDHJWUAEroXA?format=jpg&name=large", user_id: andres.id)
+Cocktail.create(name: "Autumn Colors", image: "https://pbs.twimg.com/media/FCQJ5SDWYAEWRML?format=jpg&name=medium", user_id: andres.id)
 
-Cocktail.create(name: "Tiki Cocktail", image: "https://pbs.twimg.com/media/FCCjDHIXsAI1Z2u?format=jpg&name=large", user_id: andres.id)
-Cocktail.create(name: "Frosé", image: "https://pbs.twimg.com/media/FCCjDHKX0AQMrnP?format=jpg&name=large", user_id: andres.id)
+Cocktail.create(name: "Tiki Cocktail", image: "https://pbs.twimg.com/media/FCQJ5S1WYAQF7jU?format=jpg&name=medium", user_id: andres.id)
+Cocktail.create(name: "Frosé", image: "https://pbs.twimg.com/media/FCQJ5S0X0AES-C4?format=jpg&name=medium", user_id: andres.id)
 
 
 puts "I am DONE seeding Cocktails" 
+
+puts "I am starting to SEED Rates"  
+
+Rate.create(serv:"Menu Design",image: "https://pbs.twimg.com/media/FCZ0bC0WYAEVafU?format=jpg&name=large", description: "We will meet with you to fully understand your needs and bring your vision to life! ")
+
+Rate.create(serv:"Small Private Event",image: "https://pbs.twimg.com/media/FCbPhbzXsAIW3VT?format=jpg&name=large",  description: "Size: up to 50 guests")
+Rate.create(serv:"Medium-Large Private Event", image: "https://pbs.twimg.com/media/FCbPhboWEAA0yhe?format=jpg&name=large", description: "Size: 50+ guests")
+
+Rate.create(serv:"Cocktail Personalization",image: "https://pbs.twimg.com/media/FCZ0bDdWEAAjyeo?format=jpg&name=large",  description: "Our custom created cocktails will make your event unforgettable!")
+
+puts "I am DONE seeding Rates"

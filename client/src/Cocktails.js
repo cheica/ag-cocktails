@@ -77,6 +77,7 @@ function Cocktails() {
               .then(fetchedTails => {
                 console.log(fetchedTails)
                 setDrinks([...drinks, fetchedTails])
+                e.target.reset();
                 
               })
               
@@ -108,7 +109,7 @@ function Cocktails() {
     return (
         
         <>
-        <h1>Our CREATIONS </h1>
+        <h1 className="glow">Our Creations </h1>
        {/* <div> */}
                  <form onSubmit={handleSubmit}>
                     <label>Name</label>

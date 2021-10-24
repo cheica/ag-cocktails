@@ -7,21 +7,37 @@ import CocktailCard from './CocktailCard';
 import { useState } from 'react';
 import AboutUs from './AboutUs';
 import LogIn from './Login';
+import Rates from './Rates';
+import Reviews from './Reviews';
+import ContactUs from './ContactUs'
 
 function App() {
 
   return (
     <div >
       <BrowserRouter>
-      <NavBar/>
-
+        <NavBar/>
+      
       <Switch>
-        <Route path="/aboutus">
-          <AboutUs/>
-        </Route>
+
 
         <Route path="/cocktails">
           <Cocktails/>
+
+        </Route>
+        <Route path="/services">
+          <Rates/>
+
+        </Route>
+
+        
+        <Route path="/reviews">
+          <Reviews />
+
+        </Route>
+
+        <Route path="/contactus">
+          <ContactUs/>
 
         </Route>
 
@@ -29,6 +45,13 @@ function App() {
           <LogIn/>
 
         </Route>
+
+        <Route path="/">
+          <AboutUs/>
+
+        </Route>
+
+
       </Switch>
       </BrowserRouter>
 

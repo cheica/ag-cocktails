@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   
+  resources :rates
   resources :reviews
   resources :cocktails, only: [:index, :create, :destroy]
   resources :users, only: [:index]

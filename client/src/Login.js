@@ -40,9 +40,9 @@ function LogIn(){
                 <input className="input" type="text" onChange={typingUser} />Need OnChange 
                 <label className="button"> Password:  </label>
                 <input className="input" type="password"/>Need OnChange 
-                <Link to = "/cocktails"> 
+                {/* <Link to = "/cocktails">  */}
                 <button className="button">LogIn</button>
-                </Link>
+                {/* </Link> */}
                 
                 {/* <input type="submit" value= "Login"/> */}
  
