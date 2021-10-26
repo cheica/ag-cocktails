@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import BookNow from "./BookNow";
 import RatesCard from './RatesCard'
 
 
@@ -36,7 +37,9 @@ function Rates () {
     return (
         <div>
             <h1 className="glow"> Our Services:</h1>
+            {<BookNow/>}
             <br></br>
+            
             
             {mapRates()}
         </div>

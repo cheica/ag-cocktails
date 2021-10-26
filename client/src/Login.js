@@ -3,29 +3,38 @@ import { Link } from "react-router-dom";
 
 function LogIn(){
 
-    const [userLogging, setUserLogging] = useState("")
+    const [username, setUsername] = useState("")
+
+    const [userActive, setUserActive] = useState(false)
+    console.log("Is anyone logged In?", userActive)
+
 
     function typingUser(synthEvent){
-        console.log("UsernameLogging")
-        setUserLogging(synthEvent.target.value)
+        console.log("UsernameLogging",synthEvent.target.value )
+        setUsername(synthEvent.target.value)
 
     }
 
     function handleUserLogin(synthEvent){
         synthEvent.preventDefault()
 
-        const userObj = {
+            
 
-        }
-        console.log("Username to check for login", userLogging)
+        console.log("Username to check for login", username)
+
+        // const userObj = {
+        // //     username: username
+        // }
 
         fetch("/login", {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({username: userLogging})
+            body: JSON.stringify({ username: username})
         })
         .then(response => response.json())
-        .then(console.log)
+        .then(loggedin => {console.log("We're loggedin:", loggedin)
+            setUserActive(true)
+        })
 
     }
 
@@ -34,29 +43,53 @@ function LogIn(){
 
         return (
             <div>
-                <h2 className="center">Admin Log-In</h2>
-                <form className="center" onSubmit={handleUserLogin}> Need OnSubmit
-                <label className="button"> Username:  </label> 
-                <input className="input" type="text" onChange={typingUser} />Need OnChange 
-                <label className="button"> Password:  </label>
-                <input className="input" type="password"/>Need OnChange 
-                {/* <Link to = "/cocktails">  */}
-                <button className="button">LogIn</button>
-                {/* </Link> */}
-                
-                {/* <input type="submit" value= "Login"/> */}
- 
- 
+                <form className="admin-form" onSubmit={handleUserLogin}>
+                    <label>Username: </label>
+                    <input type="user-text"  placeholder="Your username.." onChange={typingUser}/>
+                    <label>Password: </label>
+                    <input type="password"  placeholder="Your password.."/>
+
+                    <input type="submit" value="Submit"/>
                 </form>
-     </div>
+                {whosHere()}
+            </div>
  
         )
     }
+
+    function handleUserLogOUT (synthEvent) {
+        synthEvent.preventDefault()
+
+        fetch("/login", {
+            method: "DELETE"
+            
+            
+        })
+        .then(response => response.json())
+        .then(loggedOut => {console.log("Until next time", loggedOut)
+            setUserActive(false)
+            // console.log("UserActive?", userActive)
+        })
+
+    }
  
+    const whosHere=()=> {
+
+        //Ternary 
+        return userActive ? 
+        (<button onClick={handleUserLogOUT}> Logout </button>) 
+        :
+        (
+            <>
+            </>
+        )
+
+
+    }
          
      
     return(
-        <div>
+        <div className="center">
         {renderLogIn()}
         </div>
         

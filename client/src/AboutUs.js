@@ -27,7 +27,7 @@ function AboutUs(){
             <p class="prof-title">CEO/Founder</p>
             <a href="https://www.instagram.com/a.g.cocktail_alchemist/"><i class="fa fa-instagram"></i></a>
             <a href="mailto:a.g.cocktailalchemist@gmail.com"><i class="fa fa-inbox"></i></a>
-            {/* <a href="#"><i class="fa fa-linkedin"></i></a> */}
+            <a href="https://api.whatsapp.com/send?phone=2012339012"><i class="fa fa-whatsapp"></i></a>
             <a href="https://www.facebook.com/Andreslds86"><i class="fa fa-facebook"></i></a>
             <p><Link className="button" to="./contactus">Contact</Link></p>
         </div>

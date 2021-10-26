@@ -10,6 +10,7 @@ import LogIn from './Login';
 import Rates from './Rates';
 import Reviews from './Reviews';
 import ContactUs from './ContactUs'
+import BookNow from './BookNow';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
     <div >
       <BrowserRouter>
         <NavBar/>
+        
       
       <Switch>
 

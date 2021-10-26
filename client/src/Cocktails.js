@@ -1,4 +1,5 @@
 import react, { useEffect, useState } from 'react'
+import BookNow from './BookNow';
 import CocktailCard from './CocktailCard';
 import NavBar from './NavBar'
 
@@ -110,6 +111,7 @@ function Cocktails() {
         
         <>
         <h1 className="glow">Our Creations </h1>
+        {<BookNow/>}
        {/* <div> */}
                  <form onSubmit={handleSubmit}>
                     <label>Name</label>

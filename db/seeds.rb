@@ -46,8 +46,8 @@ puts "I am starting to SEED Rates"
 
 Rate.create(serv:"Menu Design",image: "https://pbs.twimg.com/media/FCZ0bC0WYAEVafU?format=jpg&name=large", description: "We will meet with you to fully understand your needs and bring your vision to life! ")
 
-Rate.create(serv:"Small Private Event",image: "https://pbs.twimg.com/media/FCbPhbzXsAIW3VT?format=jpg&name=large",  description: "Size: up to 50 guests")
-Rate.create(serv:"Medium-Large Private Event", image: "https://pbs.twimg.com/media/FCbPhboWEAA0yhe?format=jpg&name=large", description: "Size: 50+ guests")
+Rate.create(serv:"Small Private Event",image: "https://pbs.twimg.com/media/FCZ0bC2WEAgtVLe?format=jpg&name=large",  description: "Size: up to 50 guests")
+Rate.create(serv:"Medium-Large Private Event", image: "https://pbs.twimg.com/media/FCZ0bDDWEBAIks8?format=jpg&name=large", description: "Size: 50+ guests")
 
 Rate.create(serv:"Cocktail Personalization",image: "https://pbs.twimg.com/media/FCZ0bDdWEAAjyeo?format=jpg&name=large",  description: "Our custom created cocktails will make your event unforgettable!")
 

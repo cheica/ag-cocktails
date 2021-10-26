@@ -284,6 +284,19 @@ a {
 
 }
 
+/* Book Now Button */
+.book-butt{
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
 
 .glow {
   font-size: 80px;
@@ -301,4 +314,19 @@ a {
   to {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
+}
+
+
+.admin-form {
+  /* border: 3px solid #f1f1f1;
+  border-radius: 5px;
+  background-color: #f2f2f2; */
+  padding: 10%;
+}
+
+.admin-container{
+  border: 3px solid #f1f1f1;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  /* padding: 70%; */
 }

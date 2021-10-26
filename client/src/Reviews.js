@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import BookNow from "./BookNow";
 import ReviewCard from "./ReviewCard";
 
 function Reviews () {
@@ -156,9 +157,10 @@ function Reviews () {
 
     return (
         <div className="center">
+            
             {renderRevform()}
 
-           
+            {<BookNow/>}
             {mapRevs()}
             
         </div>

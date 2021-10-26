@@ -12,7 +12,7 @@ function ContactUs(){
                     <div class="column">
                     
                             <form className="contact-form">
-                            <div class="center">
+                            
                             <img src="https://pbs.twimg.com/media/FCP8HSzWEAAiNmw?format=jpg&name=small" className="propic"/>
                                 <label for="fname">First Name</label>
                                 <input type="text" id="fname" name="firstname" placeholder="Your name.."/>
@@ -23,7 +23,7 @@ function ContactUs(){
                                 <label for="subject">Please tell us more about your event:</label>
                                 <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
                                 <input type="submit" value="Submit"/>
-                                </div>
+                                
                             </form>
                            
                             </div>
@@ -37,7 +37,7 @@ function ContactUs(){
     return(
         <>
         
-        <h1>Hello</h1>
+        {/* <h1>Hello</h1> */}
         {ContactForm()}
         
 
