@@ -14,6 +14,18 @@ import BookNow from './BookNow';
 
 function App() {
 
+  const [adminState, setAdminState] = useState(false)
+  console.log("IS ADMIN HERE?", adminState)
+
+  function isAdminHere () {
+
+  
+
+    setAdminState(true)
+
+
+  }
+
   return (
     <div >
       <BrowserRouter>
@@ -24,7 +36,8 @@ function App() {
 
 
         <Route path="/cocktails">
-          <Cocktails/>
+          <Cocktails
+          adminPass={adminState}/>
 
         </Route>
         <Route path="/services">
@@ -44,7 +57,8 @@ function App() {
         </Route>
 
         <Route path="/login">
-          <LogIn/>
+          <LogIn
+          findUser={isAdminHere}/>
 
         </Route>
 

@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-function LogIn(){
+function LogIn(props){
+
+
+    
 
     const [username, setUsername] = useState("")
 
@@ -34,6 +37,9 @@ function LogIn(){
         .then(response => response.json())
         .then(loggedin => {console.log("We're loggedin:", loggedin)
             setUserActive(true)
+
+            props.findUser()
+            
         })
 
     }

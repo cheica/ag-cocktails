@@ -4,7 +4,7 @@ import CocktailCard from './CocktailCard';
 import NavBar from './NavBar'
 
 
-function Cocktails() {
+function Cocktails(props) {
 
    const [drinks, setDrinks] = useState( [] )
 
@@ -34,7 +34,8 @@ function Cocktails() {
             <CocktailCard 
                 key={eachDrink.id}
                 drinksToRender={eachDrink}
-                deleteFunc={handleDelete} />
+                deleteFunc={handleDelete} 
+                adminPassCard={props.adminPass}/>
                 
                 
             )
@@ -107,29 +108,38 @@ function Cocktails() {
 
     // End of Form Functions 
 
+    function renderTailsForm () {
+
+        return props.adminPass ? 
+        (<form onSubmit={handleSubmit}>
+            <label>Name</label>
+            <input type="text" onChange={handleName}/>
+
+            <label>Image</label>
+            <input type="text" onChange={handleImg}/>
+
+            <input className="button" type="submit" value="SUBMIT" />
+        </form>)
+        :
+        (<> </>)
+
+            }
+
     return (
         
-        <>
-        <h1 className="glow">Our Creations </h1>
+        <div className="center">
+        <h1 className="featured">Featured Creations </h1>
         {<BookNow/>}
-       {/* <div> */}
-                 <form onSubmit={handleSubmit}>
-                    <label>Name</label>
-                    <input type="text" onChange={handleName}/>
+        <br></br>
+        {/* <div> */}
+        {renderTailsForm()}
 
-                    <label>Image</label>
-                    <input type="text" onChange={handleImg}/>
-
-                    <label>User</label>
-                    <input type="text"/>
-                    <input className="button" type="submit" value="SUBMIT" />
-                </form>
         {/* </div> */}
 
         {mapDrinks()}
 
 
-        </>
+        </div>
         
     )
     

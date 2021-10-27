@@ -11,8 +11,9 @@ function RatesCard (props) {
             <div className="center"> 
                 <div className="prod-card" >
                     <img className="prod-img" src={props.RatesToRender.image} alt={props.RatesToRender.serv} />
-        
-                    <h2> {props.RatesToRender.serv}</h2>
+                    <div className="servc">  
+                         <h2> {props.RatesToRender.serv}</h2>
+                    </div>
                      <h4> {props.RatesToRender.description}</h4>
 
                 </div>

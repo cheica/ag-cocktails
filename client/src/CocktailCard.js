@@ -3,6 +3,7 @@ import Cocktails from './Cocktails'
 
 
 function CocktailCard(props){
+    console.log("Props in Cocktails Card", props.adminPassCard)
     // console.log("from props", props.deleteFunction)
  
 
@@ -26,6 +27,8 @@ function CocktailCard(props){
   
 //   }
 
+// function 
+
 
  
     return (
@@ -34,10 +37,17 @@ function CocktailCard(props){
         <div className="center"> 
             <div className="card" >
                  <img className="card-img" src={props.drinksToRender.image} alt={props.drinksToRender.name} />
-        
+            <div className="feature-name">
                 <h4 >{props.drinksToRender.name}</h4>
-                <button onClick={(e) => props.deleteFunc(props.drinksToRender.id)}>Delete</button>
             </div>
+            
+            { props.adminPassCard ?
+                <button className="delete-butt" onClick={(e) => props.deleteFunc(props.drinksToRender.id)}>Delete</button>
+            : 
+
+                <></>
+            } 
+                </div>
 
         </div>
     </div>
