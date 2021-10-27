@@ -12,7 +12,8 @@ function ContactUs(){
                     
                     <div class="column">
                     
-                            <form className="contact-form">
+                            <form className="contact-form" onSubmit={(e) => {e.preventDefault()
+                            e.target.reset()}}>
                             <div class="center">
                             <img src="https://pbs.twimg.com/media/FCP8HSzWEAAiNmw?format=jpg&name=small" className="propic"/>
                                 <label for="fname">First Name</label>

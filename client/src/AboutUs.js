@@ -7,7 +7,7 @@ function AboutUs(){
     {/* <img src="https://pbs.twimg.com/media/FCP8HSzWEAAiNmw?format=jpg&name=small"  alt="AG Cocktails logo" className="center"/> */}
     <h1 className="glow">AG Cocktail Alchemist</h1>
 
-    <p >
+    <p className="about-container">
         A.G Cocktail Alchemist was founded by Andres Giraldo. Andres was born in Pereira, Colombia and moved to New Jersey when he was just a teen. After starting his career in the restaurant industry, Andres discovered his passion for bartending and has been doing so professionally for over a decade. Every drink is made with dedication, creativity and love! 
         <br></br>
         <br></br>
@@ -19,6 +19,7 @@ function AboutUs(){
         <br></br>
     </p>
     <div className="center">
+    <h2 className="staff">Meet the Staff</h2> 
     <div className="flex-container">
              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
              <div className="flex-container">
@@ -33,8 +34,9 @@ function AboutUs(){
             <p><Link className="button" to="./contactus">Contact</Link></p>
         </div>
         </div>
-
-<div className="flex-container">    
+        
+<div className="flex-container"> 
+  
 <div class="profile-card">
 
     <img src="https://pbs.twimg.com/media/FCb98XIXsAQdWe2?format=jpg&name=large" className="propic" alt="John"/>
