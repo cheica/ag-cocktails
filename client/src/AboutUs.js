@@ -12,19 +12,21 @@ function AboutUs(){
         <br></br>
         <br></br>
         <br></br>
-        A.G. Cocktail Alchemist's staff is comprised of a Certfied Sommelier, Menu Designers and Bartenders. We are ready to cater your private event no matter the size! 
+        A.G. Cocktail Alchemist's staff is comprised of a Certfied Sommelier, Menu Designers and Bartenders. <br></br>
+        <br></br>
+        We are ready to cater your private event no matter the size! 
 
         <br></br>
         <br></br>
         <br></br>
     </p>
-    <div className="center">
-    <h2 className="staff">Meet the Staff</h2> 
+    {/* <div className="center"> */}
+    <h2 className="staff">Meet the Staff ⬇️ </h2> 
     <div className="flex-container">
              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
              <div className="flex-container">
         <div class="profile-card">
-            <img src="https://pbs.twimg.com/media/FCb5uQuXEAInSl5?format=jpg&name=large" className="propic" alt="John"/>
+            <img src="https://pbs.twimg.com/media/FFzaQBhWUAEvAxx?format=jpg&name=large" className="propic" alt="staff pic"/>
             <h1>Andres Giraldo</h1>
             <p class="prof-title">Founder</p>
             <a href="https://www.instagram.com/a.g.cocktail_alchemist/"><i class="fa fa-instagram"></i></a>
@@ -37,22 +39,37 @@ function AboutUs(){
         
 <div className="flex-container"> 
   
+    <div class="profile-card">
+
+        <img src="https://pbs.twimg.com/media/FFzaQBjXIAUs3oU?format=jpg&name=large" className="propic" alt="staff pic"/>
+        <h1>Josh Pita</h1>
+        <p class="prof-title">Sommelier</p>
+        <a href="https://www.instagram.com/a.g.cocktail_alchemist/"><i class="fa fa-instagram"></i></a>
+        <p><Link className="button" to="./contactus">Contact</Link></p>
+    </div>
+
+</div>
+    
+<div className="flex-container"> 
 <div class="profile-card">
 
-    <img src="https://pbs.twimg.com/media/FCb98XIXsAQdWe2?format=jpg&name=large" className="propic" alt="John"/>
-    <h1>Josh Pita</h1>
-    <p class="prof-title">Sommelier</p>
-    <a href="https://www.instagram.com/a.g.cocktail_alchemist/"><i class="fa fa-instagram"></i></a>
-    <p><Link className="button" to="./contactus">Contact</Link></p>
-    </div>
+<img src="https://pbs.twimg.com/media/Eu2J35PWYActojP?format=jpg&name=small" className="propic" alt="staff pic"/>
+        <h1>Chelsea Icaza</h1>
+        <p class="prof-title">Social Media Coordinator</p>
+        <a href="https://www.instagram.com/_cheica/"><i class="fa fa-instagram"></i></a>
+        <p><Link className="button" to="./contactus">Contact</Link></p>
+
 </div>
+
+</div>
+
 </div>
 </div>
     
 
 
 
-    </div>
+    // </div>
     )
 
 }

@@ -56,11 +56,11 @@ function App() {
 
         </Route>
 
-        <Route path="/login">
+        {/* <Route path="/login">
           <LogIn
           findUser={isAdminHere}/>
 
-        </Route>
+        </Route> */}
 
         <Route path="/">
           <AboutUs/>

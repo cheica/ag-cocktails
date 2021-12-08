@@ -24,9 +24,9 @@ function NavBar () {
                 Contact Us
             </NavLink>
             
-            <NavLink className="nav-button" to="./login">
+            {/* <NavLink className="nav-button" to="./login">
                 Log-In
-            </NavLink>
+            </NavLink> */}
             
         </nav>
         

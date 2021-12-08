@@ -23,7 +23,7 @@ default: &default
 
 development:
   <<: *default
-  database: cocktails_final_1023_220pm_development
+  database: cocktails_final_1204_6pm_development
   # database: react_rails_api_project_template_development
 
   # The specified database role being used to connect to postgres.
@@ -58,7 +58,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: cocktails_final_1023_220pm_test
+  database: cocktails_final_1204_6pm_test
   # database: react_rails_api_project_template_test
 
 # As with config/credentials.yml, you never want to store sensitive information,
@@ -83,7 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: cocktails_final_1023_220pm_production
+  database: cocktails_final_1204_6pm_production
   # database: react_rails_api_project_template_production
   username: react_rails_api_project_template
   password: <%= ENV['REACT_RAILS_API_PROJECT_TEMPLATE_DATABASE_PASSWORD'] %>

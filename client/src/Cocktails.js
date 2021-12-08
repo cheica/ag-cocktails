@@ -128,7 +128,7 @@ function Cocktails(props) {
     return (
         
         <div className="center">
-        <h1 className="featured">Featured Creations </h1>
+        <h1 className="glow">Featured Creations </h1>
         {<BookNow/>}
         <br></br>
         {/* <div> */}
