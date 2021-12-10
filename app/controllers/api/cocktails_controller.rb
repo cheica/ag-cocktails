@@ -1,4 +1,4 @@
-class CocktailsController < ApplicationController
+class Api::CocktailsController < ApplicationController
 
     def index 
         render json: Cocktail.all

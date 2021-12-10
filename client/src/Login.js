@@ -29,7 +29,7 @@ function LogIn(props){
         // //     username: username
         // }
 
-        fetch("/login", {
+        fetch("/api/login", {
             method: "POST",
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({ username: username})
@@ -66,7 +66,7 @@ function LogIn(props){
     function handleUserLogOUT (synthEvent) {
         synthEvent.preventDefault()
 
-        fetch("/login", {
+        fetch("/api/login", {
             method: "DELETE"
             
             

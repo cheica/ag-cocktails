@@ -16,7 +16,7 @@ function Reviews () {
 
 
     useEffect( () => {
-        fetch("/reviews")
+        fetch("/api/reviews")
         .then(response => response.json())
         .then(fetchedReviews => {console.log("from fetch:", fetchedReviews)
             setReviews(fetchedReviews)
@@ -73,7 +73,7 @@ function Reviews () {
             "comment": newComment
         }
     
-        fetch("/reviews",{
+        fetch("/api/reviews",{
             method: 'POST',
             headers: { "Content-type" : "application/json",
             },

@@ -17,7 +17,7 @@ function Cocktails(props) {
    ///
 
     useEffect( () => {
-        fetch("/cocktails")
+        fetch("/api/cocktails")
         .then(response => response.json())
         .then(fetchedTails => {console.log("from fetch:", fetchedTails)
             setDrinks(fetchedTails)
@@ -68,7 +68,7 @@ function Cocktails(props) {
                 "user_id": 1
             }
         
-            fetch("/cocktails",{
+            fetch("/api/cocktails",{
                 method: 'POST',
                 headers: { "Content-type" : "application/json",
                 },

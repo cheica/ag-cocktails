@@ -1,4 +1,4 @@
-class RatesController < ApplicationController
+class Api::RatesController < ApplicationController
 
     def index
 

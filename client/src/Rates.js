@@ -9,7 +9,7 @@ function Rates () {
 
 
     useEffect( () => {
-        fetch("/rates")
+        fetch("/api/rates")
         .then(response => response.json())
         .then(fetchedRates => {console.log("from fetch:", fetchedRates)
             setRates(fetchedRates)
