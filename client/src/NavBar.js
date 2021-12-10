@@ -28,6 +28,7 @@ function NavBar () {
                 Log-In
             </NavLink> */}
             
+            {/* random comment  */}
         </nav>
         
     </header>
